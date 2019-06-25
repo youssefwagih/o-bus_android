@@ -1,7 +1,8 @@
-package com.youssef.obus
+package com.youssef.obus.ui
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.youssef.obus.R
 
 class MainActivity : AppCompatActivity() {
 
