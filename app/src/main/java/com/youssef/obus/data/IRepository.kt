@@ -1,6 +1,6 @@
 package com.youssef.obus.data
 
-import android.arch.lifecycle.LiveData
+import androidx.lifecycle.LiveData
 import com.youssef.obus.data.models.Busline
 import com.youssef.obus.data.models.Checkpoint
 

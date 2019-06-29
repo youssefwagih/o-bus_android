@@ -1,7 +1,7 @@
 package com.youssef.obus.ui.buslines
 
 import android.content.Context
-import android.support.v7.widget.RecyclerView
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -11,7 +11,7 @@ import com.youssef.obus.data.models.Busline
 import kotlinx.android.synthetic.main.list_item_busline.view.*
 
 class BuslinesAdapter(val context: Context?, val passengersList: List<Busline>, val c: (Busline) -> Unit) :
-    RecyclerView.Adapter<BuslinesAdapter.PassengersViewHolder>() {
+    androidx.recyclerview.widget.RecyclerView.Adapter<BuslinesAdapter.PassengersViewHolder>() {
 
 
 
@@ -28,7 +28,7 @@ class BuslinesAdapter(val context: Context?, val passengersList: List<Busline>, 
         passengersViewHolder.itemView.setOnClickListener{ c.invoke(passengersList[position])}
     }
 
-    class PassengersViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+    class PassengersViewHolder(view: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
 
     }
 }

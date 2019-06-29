@@ -6,7 +6,7 @@ import com.youssef.obus.data.IRepository
 import com.youssef.obus.data.Repository
 import com.youssef.obus.data.models.Busline
 
-class BuslinesListingViewModel : ViewModel() {
+class BuslineMapViewModel : ViewModel() {
     val repositiory: IRepository = Repository()
 
     fun getBuslines(): LiveData<List<Busline>> {

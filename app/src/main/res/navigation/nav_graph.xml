@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/nav_graph"
+            app:startDestination="@id/mainFragment">
+
+    <fragment
+            android:id="@+id/mainFragment"
+            android:name="com.youssef.obus.ui.buslines.BuslinesListingFragment"
+            android:label="main_fragment"
+            tools:layout="@layout/fragment_listing_bus_lines">
+        <action android:id="@+id/action_mainFragment_to_buslineMapFragment2" app:destination="@id/buslineMapFragment"
+                app:exitAnim="@anim/nav_default_exit_anim" app:enterAnim="@anim/nav_default_enter_anim"
+                app:popUpTo="@+id/mainFragment"/>
+    </fragment>
+
+    <fragment
+            android:id="@+id/buslineMapFragment"
+            android:name="com.youssef.obus.ui.busline_map.BuslineMapFragment"
+            android:label="bus_line_map"
+            tools:layout="@layout/activity_maps">
+        <argument android:name="busline" app:argType="com.youssef.obus.data.models.Busline"/>
+    </fragment>
+
+
+
+</navigation>

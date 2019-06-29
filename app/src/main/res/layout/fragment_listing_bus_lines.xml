@@ -4,9 +4,9 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.buslines.BuslinesListingFragment">
+        tools:context=".ui.busline_map.BuslineMapFragment">
 
-    <android.support.v7.widget.RecyclerView
+    <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/passenger_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>

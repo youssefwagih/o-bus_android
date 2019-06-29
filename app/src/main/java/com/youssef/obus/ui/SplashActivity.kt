@@ -3,7 +3,7 @@ package com.youssef.obus.ui
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import com.youssef.obus.R
 
 class SplashActivity : AppCompatActivity() {
@@ -13,10 +13,10 @@ class SplashActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash)
 
         //Initializing the Handler
-        var mDelayHandler = Handler()
+        val mDelayHandler = Handler()
 
         //Navigate with delay
-        mDelayHandler!!.postDelayed({
+        mDelayHandler.postDelayed({
             startActivity(Intent(this, MainActivity::class.java))
 
         }, 5000)
